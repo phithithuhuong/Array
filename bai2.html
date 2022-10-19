@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chèn(-)giữa số chẵn</title>
+</head>
+<body>
+<script>
+let tuesday=prompt();
+let mover = tuesday.toString();
+let ketqua = [mover[0]];
+for(let x=1; x<mover.length; x++)
+{
+    if((mover[x-1]%2 === 0)&&(mover[x]%2 === 0))
+    {
+        ketqua.push('-', mover[x]);
+    }
+    else
+    {
+        ketqua.push(mover[x]);
+    }
+}
+console.log(ketqua.join(''));
+
+</script>
+
+</body>
+</html>

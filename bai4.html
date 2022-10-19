@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyenAnhsangViet</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+    let language = prompt('nhập chữ');
+    let english =['sunday','today','everyday'];
+    let vietnamese = ['chủ nhật','hôm nay','mọi ngày'];
+    let flag = false;
+    //flag
+    for (let i=0;i<english.length;i++){
+        if (language === english[i]){
+            alert('dịch: '+vietnamese[i]);
+            flag = true;
+            break;
+        }
+    }
+    if (flag === false) {
+        alert('không tìm thấy')
+    }
+
+
+</script>
+</body>
+</html>

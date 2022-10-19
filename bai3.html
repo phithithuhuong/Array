@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhậpchứthườngthànhchữhoaArray</title>
+</head>
+<body>
+<script>
+    // let nhap = prompt('language:')
+    // let rerult =nhap.toLowerCase('updown')
+    // console.log(rerult)
+    // let str = prompt();
+    // let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    // let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    // let result = [];
+    //
+    // for (let x = 0; x < str.length; x++) {
+    //     if (UPPER.indexOf(str[x]) !== -1) {
+    //         result.push(str[x].toLowerCase());
+    //     } else if (LOWER.indexOf(str[x]) !== -1) {
+    //         result.push(str[x].toUpperCase());
+    //     } else {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // console.log(result.join(''));
+    let input = prompt('Nhap chuoi :').split('')//split : đổi chuỗi thành mảng
+    for (let i = 0; i < input.length; i++) {
+        if(input[i] === input[i].toLowerCase()){
+
+            input[i] = input[i].toUpperCase()
+        }
+        else if(input[i] === input[i].toUpperCase()){
+            input[i] = input[i].toLowerCase()
+        }
+    }
+    //join: chuyển mảng thènh chuỗi
+    console.log(input.join(''))
+
+</script>
+
+</body>
+</html>
